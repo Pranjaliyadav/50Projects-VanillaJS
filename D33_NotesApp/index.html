@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="conatiner">Hello</div>
+  </head>
+  <body>
+    <button class="add" id="add">
+        <i class="fas fa-plus"></i>
+        Add note
+    </button>
 
+    <div class="note">
+        <div class="tools">
+            <button class="edit"><i class="fas fa-edit"></i></button>
+            <button class="delete"><i class="fas fa-trash-alt"></i></button>
+        </div>
 
+        <div class="hidden"></div>
+        <textarea ></textarea>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.2.0/marked.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
