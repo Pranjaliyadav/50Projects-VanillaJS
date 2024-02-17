@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 
 *{
@@ -6,13 +6,97 @@
 }
 
 body{
-    background-color: #fff;
-    font-family: 'Muli',sans-serif;
+    background-color: #f4f4f4;
+    font-family: 'Montserrat',sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 10px;
     height: 100vh;
     overflow: hidden;
     margin: 0;
+
+}
+
+.testimonial-container{
+    background-color: #476ce4;
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width: 768px;
+    position: relative;
+}
+
+.fa-quote{
+    color: rgba(255,255,255, 0.3);
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+}
+
+.fa-quote-right{
+    left: 40px;
+}
+
+.fa-quote-left{
+    right: 40px;
+}
+
+@media(max-width: 768px){
+    /*styles will only apply if width is under 768px*/
+   .testimonial-container{
+    padding: 20px 30px;
+   }
+   
+    .fa-quote{
+        display: none;
+    }
+}
+
+.testimonial{
+    line-height: 28px;
+    text-align: justify;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user .user-image{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+
+.user .user-details{
+    margin-left: 10px;
+}
+
+.user .username{
+    margin: 0;
+}
+
+.user .role{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.progress-bar{
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite; /*linear way infinite times*/
+    transform-origin: left; /*where animation starts from*/
+}
+
+@keyframes grow{
+    0%{
+        transform: scaleX(0);
+    }
 
 }
